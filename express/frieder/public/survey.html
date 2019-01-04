@@ -134,7 +134,7 @@
         <option value="5">5 (Strongly Agree)</option>
       </select>
       <br><br>
-      <h3><strong>Question 9<strong></h3>
+      <h3><strong>Question 9</strong></h3>
       <h4>You're a dog person</h4>
       <select class="selectpicker dataPicker" id="q9">
         <option value=""></option>
@@ -196,37 +196,15 @@
   
     <script type="text/javascript">
 
+//close button
 $(document).on("click",".closebtn",function() {
   $(".dataPicker").val('default');
-$(".dataPicker").selectpicker("refresh");
-
     });
-      // Chosen CSS
-      // var config = {
-      //   ".chosen-select": {},
-      //   ".chosen-select-deselect": {
-      //     allow_single_deselect: true
-      //   },
-      //   ".chosen-select-no-single": {
-      //     disable_search_threshold: 10
-      //   },
-      //   ".chosen-select-no-results": {
-      //     no_results_text: "Oops, nothing found!"
-      //   },
-      //   ".chosen-select-width": {
-      //     width: "95%"
-      //   }
-      // };
-  
-      // for (var selector in config) {
-      //   $(selector).chosen(config[selector]);
-      // }
-  
-      // Capture the form inputs
+  //submit button
       $("#submit").on("click", function(event) {
         event.preventDefault();
-  
-        // Form validation
+        
+      
         function validateForm() {
           var isValid = true;
           $(".form-control").each(function() {
@@ -234,9 +212,7 @@ $(".dataPicker").selectpicker("refresh");
               isValid = false;
             }
           });
-  
           $(".chosen-select").each(function() {
-  
             if ($(this).val() === "") {
               isValid = false;
             }
@@ -263,13 +239,25 @@ $(".dataPicker").selectpicker("refresh");
               $("#q10").val()
             ]
           };
-  console.log(userData.scores);
-          // AJAX post the data to the friends API.
+
+          //get that data before user post
+          var holderReq ;
+          var userPaste;
+          $.get("/api/tables", function(req, res) {
+
+    holderReq=req[0];
+numberTime();
+  });
+  function numberTime(){
+    var chooseNum = Math.floor(Math.random() * holderReq.length);
+ userPaste = holderReq[chooseNum];
+  };
+
+          // AJAX post t
           $.post("/api/tables", userData, function(data) {
-  console.log(userData);
          //   Grab the result from the AJAX post so that the best match's name and photo are displayed.
-            $("#match-name").text(data.name);
-            $("#match-img").attr("src", data.photo);
+            $("#match-name").text(userPaste.name);
+            $("#match-img").attr("src", userPaste.photo);
   
             // Show the modal with the best match
             $("#results-modal").modal("toggle");
@@ -280,9 +268,5 @@ $(".dataPicker").selectpicker("refresh");
         }
       });
     </script>
-  
-  
-  
-  
   </body>
 </html>
