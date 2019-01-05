@@ -19,14 +19,14 @@
   <body>
     <div class="container">
 
-      <div class="jumbotron">
-        <h1 class="text-center"><span class="fa fa-fire"></span> Survey</h1>
+      <div style="background-color:#a3c2c2 !important" class="jumbotron">
+        <h1 class="text-center"> Survey</h1>
         <hr>
         <h2 class="text-center">Fill out the questions and meet your new friends!</h2>
         <br>
   
         <div class="text-center">
-          <a href="/"><button class="btn btn-lg btn-primary"><span class="fa fa-list-alt"></span> Home</button></a>
+          <a href="/"><button class="btn btn-lg btn-secondary"> Home</button></a>
         
         </div>
   
@@ -35,72 +35,76 @@
     <div class="container">
   
       <h2>Survey Questions</h2>
-      <hr>
+      <br>
   
       <h3><strong>About You</strong></h3>
       <h4>Name (Required)</h4>
-      <input type="text" id="name" class="form-control nametext" required>
-  
+      <input type="text" id="name" class="form-control nametext checker" required>
       <h4>Link to Photo Image (Required)</h4>
-      <input type="text" id="photo" class="form-control imagetext" required>
-  
-      <hr>
-  
-      <h3><strong>Question 1</strong></h3>
-      <h4>You're optimistic</h4>
-      <select class="selectpicker dataPicker" id="q1">
-        <option value=""></option>
-        <option value="1">1 (Strongly Disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
-      </select>
-      <br><br>
-      <h3><strong>Question 2</strong></h3>
-      <h4>You're an extrovert</h4>
-      <select class="selectpicker dataPicker" id="q2">
-        <option value=""></option>
-        <option value="1">1 (Strongly Disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
-      </select>
-      <br><br>
-      <h3><strong>Question 3</strong></h3>
-      <h4>You're easy going</h4>
-      <select class="selectpicker dataPicker" id="q3">
-        <option value=""></option>
-        <option value="1">1 (Strongly Disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
-      </select>
-      <br><br>
-      <h3><strong>Question 4</strong></h3>
-      <h4>You're a night person</h4>
-      <select class="selectpicker dataPicker" id="q4">
-        <option value=""></option>
-        <option value="1">1 (Strongly Disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
-      </select>
-      <br><br>
-      <h3><strong>Question 5</strong></h3>
-      <h4>You like poetry</h4>
-      <select class="selectpicker dataPicker" id="q5">
-        <option value=""></option>
-        <option value="1">1 (Strongly Disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
-      </select>
-      <br><br>
+      <input type="text" id="photo" class="form-control imagetext checker" required>
+    </div>
+      <br>
+      <div class ="container">
+        <div class ="row">
+          <div class ="col-md-6">
+            <h3><strong>Question 1</strong></h3>
+            <h4>You're optimistic</h4>
+            <select class="selectpicker dataPicker" id="q1">
+              <option value=""></option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <br><br>
+            <h3><strong>Question 2</strong></h3>
+            <h4>You're an extrovert</h4>
+            <select class="selectpicker dataPicker" id="q2">
+              <option value=""></option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <br><br>
+            <h3><strong>Question 3</strong></h3>
+            <h4>You're easy going</h4>
+            <select class="selectpicker dataPicker" id="q3">
+              <option value=""></option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <br><br>
+            <h3><strong>Question 4</strong></h3>
+            <h4>You're a night person</h4>
+            <select class="selectpicker dataPicker" id="q4">
+              <option value=""></option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <br><br>
+            <h3><strong>Question 5</strong></h3>
+            <h4>You like poetry</h4>
+            <select class="selectpicker dataPicker" id="q5">
+              <option value=""></option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+          </div>
+          <div class ="col-md-6">
+          
+      
       <h3><strong>Question 6</strong></h3>
       <h4>You eat meat</h4>
       <select class="selectpicker dataPicker" id="q6">
@@ -154,28 +158,29 @@
         <option value="3">3</option>
         <option value="4">4</option>
         <option value="5">5 (Strongly Agree)</option>
-      </select>
+      </select>  
+          </div>
+        </div>
+      </div>
 
       <br>
       <br>
   
       <!-- Submit Button -->
-      <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
-       Submit</button>
-  
-      <hr>
+      <div class ='container'>
+      <button type="submit" class="btn btn-lg btn-secondary" id="submit">Submit</button>
+      <br>
       <footer class="footer">
         <div class="container">
-          <p><a href="/api/tables">API Friends List</a> | <a href="">GitHub Repo</a></p>
+          <p><a href="/api/tables">API Friends List</a> | <a href="https://github.com/hutwagnert/inexpress">GitHub Repo</a></p>
         </div>
       </footer>
   
     </div>
   
     <!-- Modal -->
-    <div id="results-modal" class="modal fade" role="dialog">
-      <div class="modal-dialog">
-  
+    <div id="returnMe" class="modal" role="dialog">
+      <div style="background-color:#a3c2c2 !important" class="modal-dialog">
         <!-- Modal content-->
         <div class="modal-content">
           <div class="modal-header">
@@ -183,11 +188,11 @@
             <h2 class="modal-title"><strong>Best Match</strong></h2>
           </div>
           <div class="modal-body">
-            <h2 id="match-name"></h2>
-            <img id="match-img" >
+            <h2 id="namematch"></h2>
+            <img id="imagematch" >
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-default closebtn" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-secondary closebtn" data-dismiss="modal">Close</button>
           </div>
         </div>
   
@@ -203,27 +208,22 @@ $(document).on("click",".closebtn",function() {
   //submit button
       $("#submit").on("click", function(event) {
         event.preventDefault();
-        
-      
-        function validateForm() {
+
+        function formchecker() {
           var isValid = true;
-          $(".form-control").each(function() {
+          $(".checker").each(function() {
             if ($(this).val() === "") {
-              isValid = false;
-            }
+              isValid = false;}
           });
           $(".chosen-select").each(function() {
             if ($(this).val() === "") {
-              isValid = false;
-            }
+              isValid = false;}
           });
-          return isValid;
-        }
-  
-        // If all required fields are filled
-        if (validateForm()) {
+          return isValid; }
+        // check if fields have been filled
+        if (formchecker()) {
           // Create an object for the user"s data
-          var userData = {
+          var dataNew = {
             name: $("#name").val(),
             photo: $("#photo").val(),
             scores: [
@@ -250,17 +250,12 @@ numberTime();
   });
   function numberTime(){
     var chooseNum = Math.floor(Math.random() * holderReq.length);
- userPaste = holderReq[chooseNum];
-  };
-
-          // AJAX post t
-          $.post("/api/tables", userData, function(data) {
-         //   Grab the result from the AJAX post so that the best match's name and photo are displayed.
-            $("#match-name").text(userPaste.name);
-            $("#match-img").attr("src", userPaste.photo);
-  
-            // Show the modal with the best match
-            $("#results-modal").modal("toggle");
+ userPaste = holderReq[chooseNum]; };
+          // AJAX post 
+          $.post("/api/tables", dataNew, function(data) {
+           $("#namematch").text(userPaste.name);
+            $("#imagematch").attr("src", userPaste.photo);
+            $("#returnMe").modal("toggle");
   
           });
         } else {
