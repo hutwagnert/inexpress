@@ -2,11 +2,9 @@
 // LOAD DATA
 // ===============================================================================
 var tableData = require("../data/tableData");
-
 // ===============================================================================
 // ROUTING
 // ===============================================================================
-
 module.exports = function(app) {
   // API GET Requests
   app.get("/api/tables", function(req, res) {
@@ -17,5 +15,4 @@ module.exports = function(app) {
       tableData.push(req.body);
       res.json(true);   
   });
-
 };
